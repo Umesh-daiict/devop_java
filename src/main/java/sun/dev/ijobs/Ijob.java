@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
 import java.util.Date;
 import java.util.List;
@@ -27,4 +28,6 @@ public class Ijob {
     private Number _year_exp;
     private List<String> _past_job_type;
     private String _company;
+    @DocumentReference
+    private User _info;
 }

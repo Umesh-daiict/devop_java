@@ -13,4 +13,5 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class User {
     private ObjectId id;
     private String name;
+    private String uniqId;
 }
